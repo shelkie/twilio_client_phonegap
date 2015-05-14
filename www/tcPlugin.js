@@ -141,9 +141,9 @@
 	    }
 	
 	    TwilioPlugin.install = function() {
-	        if (!window.Twilio) window.Twilio = {};
-	        if (!window.Twilio.Device) window.Twilio.Device = new TwilioPlugin.Device();
-	        if (!window.Twilio.Connection) window.Twilio.Connection = new TwilioPlugin.Connection();
+	        Twilio = {};
+	        Twilio.Device = new TwilioPlugin.Device();
+	        Twilio.Connection = new TwilioPlugin.Connection();
 	    }
 	 TwilioPlugin.install();
     }
